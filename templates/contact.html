@@ -7,9 +7,9 @@
   <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
   <div class="topnav">
     <a href="{{ url_for('main') }}">Home</a>
-    <a class="active" href="{{ url_for('result') }}">Result</a>
+    <!-- <a  href="{{ url_for('result') }}">Result</a> -->
     <a href="{{ url_for('about') }}">About</a>
-    <a href="{{ url_for('contact') }}">Contact</a>
+    <a class="active" href="{{ url_for('contact') }}">Contact</a>
   </div>
 </head>
 
@@ -17,16 +17,8 @@
 background-repeat: no-repeat;
 background-size: cover;">
 
-  <div style="padding: 10px 100px;
-  margin-top: 10%;
-  margin-left: 10%;">
-    <img src="{{ url_for('static', filename='images/'+load_image) }}" alt="Simply Easy Learning" width="300"
-      height="300">
-    <h2 style="color:white;">This uploaded logo is {{ answer }} logo </h2>
-    <audio controls autoplay>
-      <source src="{{ url_for('static', filename='audio/'+audio_file) }}" type="audio/mpeg">
-    </audio>
-  </div>
+  <div>Phani Chandra Sourabh Reddy</div>
+  <div>Srinivasa Arudra Phani Bhushan</div>
 
 </body>
 
