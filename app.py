@@ -25,7 +25,7 @@ def main():
         else:
             ans = 'a "Fake"'
             audio_file_name = 'fake_audio.mp3'
-        #save audio file
+        #save audio file changed
         return(flask.render_template('result.html', answer = ans, load_image = image_name, audio_file = audio_file_name ))
 
 @app.route('/about', methods=['GET', 'POST'])
