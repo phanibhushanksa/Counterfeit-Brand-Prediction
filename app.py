@@ -32,6 +32,10 @@ def main():
 def about():
     return(render_template('about.html'))
 
+@app.route('/contact', methods=['GET'])
+def contact():
+    return(render_template('contact.html'))
+
 @app.route('/result', methods=['GET'])
 def result():
     return(render_template('result.html'))
