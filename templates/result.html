@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+  <div class="topnav">
+    <a href="{{ url_for('main') }}">Home</a>
+    <a class="active" href="{{ url_for('result') }}">Result</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</head>
+
+<body style="background-image: url({{ url_for('static', filename='bgimages/detkid1.png') }});  background-position: right;
+background-repeat: no-repeat;
+background-size: cover;">
+
+  <div style=" padding: 10px 100px;">
+    <img src="{{ url_for('static', filename='images/'+load_image) }}" alt="Simply Easy Learning" width="300"
+      height="300">
+    <h2 style="color:white;">This uploaded logo is {{ answer }} logo </h2>
+    <audio controls autoplay>
+      <source src="{{ url_for('static', filename='audio/'+audio_file) }}" type="audio/mpeg">
+    </audio>
+  </div>
+
+</body>
+
+</html>
