@@ -46,7 +46,7 @@ def to_grayscale(arr):
 ## Method to load images and add to a numpy array
 def load_images_to_np_array(fname):
     images_dir = Path('static/images').expanduser()
-    dim = (400, 300)
+    dim = (256, 256)
     # Resizing all the images to same dimension
     images = []
     fpath = os.path.join(images_dir, fname)
@@ -66,7 +66,7 @@ def get_x_value(image_name):
     test_images = load_images_to_np_array(image_name)
     test_images_list =[0] * len(test_images) 
     for i in range(0,len(test_images)):
-        test_images_list[i] = np.reshape((test_images[i]),(400,300,1))
+        test_images_list[i] = np.reshape((test_images[i]),(256,256,1))
     test = np.asarray(test_images_list)
     test = test.astype('float32')
     test /= 255

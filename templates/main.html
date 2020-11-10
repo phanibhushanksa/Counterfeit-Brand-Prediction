@@ -11,18 +11,28 @@
     <a class="active" href="{{ url_for('main') }}">Home</a>
     <!-- <a href="{{ url_for('result') }}">Result</a> -->
     <a href="{{ url_for('about') }}">About</a>
-    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('contact') }}">Team</a>
   </div>
 </head>
 
 <body style="background-image: url({{ url_for('static', filename='bgimages/detkid1.png') }});  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;">
-  <div class="s01">
+  <div class="s01" style="margin-left: 50px;
+  margin-top: 50px; float: left;">
     <form action="http://localhost:5000/" method="POST">
-      <fieldset>
-        <legend>Detect counterfeit </legend>
+      <fieldset style="margin-bottom: 50;">
+        <legend>Counterfeit Detection !! </legend>
       </fieldset>
+      <h2 style="color:white;">Upload an Image to check if it is an original or a fake logo.</h2>
+      <!-- <div class="inner-form" style="width: 500px; float: none;">
+        <div class="input-field first-wrap">
+          <input type="file" name="filename">
+        </div>
+        <div class="input-field third-wrap">
+          <input type="submit">
+        </div>
+      </div> -->
       <div class="inner-form">
         <div class="input-field first-wrap">
           <!-- <input name="url" type="text" placeholder="Image URL goes here...!!!" />-->

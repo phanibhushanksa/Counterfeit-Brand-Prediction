@@ -10,8 +10,16 @@
         <a href="{{ url_for('main') }}">Home</a>
         <!-- <a href="{{ url_for('result') }}">Result</a> -->
         <a class="active" href="{{ url_for('about') }}">About</a>
-        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('contact') }}">Team</a>
     </div>
+    <style>
+        #link {
+            color:white; font-family: Delius Swash Caps; letter-spacing: 1px;
+        }
+        a {
+            color:white; font-family: Delius Swash Caps; letter-spacing: 1px;
+        }
+    </style>
 </head>
 
 <body style="background-image: url({{ url_for('static', filename='bgimages/detkid1.png') }});  background-position: right;
@@ -21,12 +29,10 @@ background-size: cover;">
         height: 500px; margin-top: 180px;
     margin-left: 100px; float: left;  ">
     <h2 style="color:white; font-family: Delius Swash Caps; letter-spacing: 1px;">"This application is built as part of Data Science Programming course's project. 
-        The aim of this project is to help a consumer or user in identifying the fake and original logos of brands like Adidas,
-        Puma, Nike This project helps in identifying the fake and original logos of brands like Adidas,
-        Puma, Nike This project helps in identifying the fake and original logos of brands like Adidas,
+        The aim of this project is to help a consumer in identifying a fake or original logos of Adidas,
         Puma, Nike" </h2>
+    <div id="link"><a href="https://github.com/sourabhreddy369/Counterfeit-Brand-Prediction">GitHub</a> link to the Project</div>
 </div>
-
 </body>
 
 </html>
