@@ -487,6 +487,8 @@ legend {
   background-size: cover;
   background-position: center center;
   padding: 15px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .s01 form {
@@ -516,7 +518,7 @@ legend {
 
 .s01 form .inner-form .input-field {
   margin-right: 30px;
-  height: 68px;
+  height: 30px;
 }
 
 .s01 form .inner-form .input-field input {
@@ -526,13 +528,13 @@ legend {
   border: 0;
   display: block;
   width: 100%;
-  padding: 10px 32px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 10px;
 }
 
 .s01 form .inner-form .input-field input.placeholder {
   color: #9a9a9a;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .s01 form .inner-form .input-field input:-moz-placeholder {
@@ -565,13 +567,37 @@ legend {
   margin-right: 0;
 }
 
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
 .s01 form .inner-form .input-field.third-wrap .btn-search {
   height: 100%;
   width: 100%;
   background: #4272d7;
   white-space: nowrap;
   border-radius: .5px;
-  font-size: 20px;
+  font-size: 10px;
   color: #fff;
   transition: all .2s ease-out, color .2s ease-out;
   border: 0;

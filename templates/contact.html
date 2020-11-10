@@ -5,21 +5,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
   <div class="topnav">
     <a href="{{ url_for('main') }}">Home</a>
     <!-- <a  href="{{ url_for('result') }}">Result</a> -->
     <a href="{{ url_for('about') }}">About</a>
-    <a class="active" href="{{ url_for('contact') }}">Contact</a>
+    <a class="active" href="{{ url_for('contact') }}">Team</a>
   </div>
+  <style>
+    div{
+      color:white; font-family: Delius Swash Caps; letter-spacing: 1px;
+      font-size: 25px;
+    }
+  </style>
 </head>
 
 <body style="background-image: url({{ url_for('static', filename='bgimages/detkid1.png') }});  background-position: right;
 background-repeat: no-repeat;
 background-size: cover;">
-
-  <div>Phani Chandra Sourabh Reddy</div>
-  <div>Srinivasa Arudra Phani Bhushan</div>
-
+  <div style="width: 500px;
+        height: 500px; margin-top: 180px;
+    margin-left: 100px; float: left;  ">
+    <h2>
+    <div>Phani Chandra Sourabh Reddy</div>
+    <div>Srinivasa Arudra Phani Bhushan</div>
+    <div>Raghavendra Sunkavalli</div>
+  </div>
+</h2>
 </body>
+
 
 </html>
