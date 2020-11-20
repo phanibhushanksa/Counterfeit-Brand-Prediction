@@ -18,15 +18,15 @@ def main():
     if flask.request.method == 'POST':
         image_name = request.form['filename']
         x_value = ip.get_x_value(image_name)
-        ans = model.predict_classes(x_value)
-        if ans == 1:
-            ans ='an "Original" '
+        predicted_val = model.predict_classes(x_value)
+        if predicted_val == 1:
+            predicted_val ='an "Original" '
             audio_file_name = 'orig_audio.mp3'
         else:
-            ans = 'a "Fake"'
+            predicted_val = 'a "Fake"'
             audio_file_name = 'fake_audio.mp3'
         #save audio file changed
-        return(flask.render_template('result.html', answer = ans, load_image = image_name, audio_file = audio_file_name ))
+        return(flask.render_template('result.html', answer = predicted_val, load_image = image_name, audio_file = audio_file_name ))
 
 @app.route('/about', methods=['GET', 'POST'])
 def about():

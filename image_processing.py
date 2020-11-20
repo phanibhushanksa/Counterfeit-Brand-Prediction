@@ -12,21 +12,6 @@ from PIL import Image
 from matplotlib import pyplot
 import scipy
 
-# image = np.asarray(PIL.Image.open('image_name.jpg'))
-# print(image)
-# # display_image = Image.fromarray(image)
-# # pyplot.imshow(display_image)
-# pyplot.show()
-
-# test_images=[image]
-# test_images_list =[0] * len(test_images) 
-# for i in range(0,len(test_images)):
-#     test_images_list[i] = np.reshape((test_images[i]),(400,300,1))
-# test = np.asarray(test_images_list)
-# test = test.astype('float32')
-# test /= 255
-
-# print(test)
 # Method to convert a 3D RGB image to 2D gray scale image
 from scipy import average
 import requests
